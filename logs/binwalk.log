@@ -1,0 +1,11 @@
+
+Scan Time:     2017-12-22 04:11:18
+Target File:   /root/Downloads/US_AC15V1.0BR_V15.03.05.18_multi_TD01.bin
+MD5 Checksum:  e20a266400568f8edaef73ad164f1ba3
+Signatures:    344
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+64            0x40            TRX firmware header, little endian, image size: 10559488 bytes, CRC32: 0xFA817870, flags: 0x0, version: 1, header size: 28 bytes, loader offset: 0x1C, linux kernel offset: 0x1C9CD4, rootfs offset: 0x0
+92            0x5C            LZMA compressed data, properties: 0x5D, dictionary size: 65536 bytes, uncompressed size: 4585280 bytes
+1875220       0x1C9D14        Squashfs filesystem, little endian, version 4.0, compression:xz, size: 8680744 bytes, 926 inodes, blocksize: 131072 bytes, created: 2017-05-10 14:10:50
+
