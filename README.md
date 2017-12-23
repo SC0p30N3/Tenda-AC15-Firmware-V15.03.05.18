@@ -12,40 +12,64 @@ It was a grep for 'passwd' that shed the light on a still existing problem with 
 under 'rootfs/etc_ro/passwd' the following accounts and password hashes are found.
 
 root:$1$nalENqL8$jnRFwb1x5S.ygN.3nwTbG1:0:0:root:/:/bin/sh
+
 admin:6HgsSsJIEOc2U:0:0:Administrator:/:/bin/sh
+
 support:Ead09Ca6IhzZY:0:0:Technical Support:/:/bin/sh
+
 user:tGqcT.qjxbEik:0:0:Normal User:/:/bin/sh
+
 nobody:VBcCXSNG7zBAY:0:0:nobody for ftp:/:/bin/sh
 
 The user and support accounts both share a clear text password of '1234'. From a local network, these accounts can access a root shell over telnet. Confirmed as of 12/17/17 on this firmware on my AC 15. When logged in, I attemped to close the hole by stopping busybox's 'telnetd' daemon. While this drops the connection and stops the service temporarily, eventually the port shows up as open again from the LAN network.
 
 Other areas of interest in discovered:
 "tendauploadcfe"
+
 "alibaba_update"
+
 These are part of the update mechanism for the device. Interested in hosting/validation.
 
 "p910nd"
+
 "ZeroClipboard.swf"
+
 "3322ip"
 
 "HP_P1008.img"
+
 This file contained hardcoded domains and IPs which I wasn't sure of the origin, but made note of anyway. (Code documentation seems decent, but my Chinese is not, however.)
 
 Domains found in HP_P1008.img:
 9158.com
+
 info.client.xunlei.com
+
 xl7.xunlei.com
+
 tfile.gw.com.cn
+
 index.10jqka.com.cn
+
 dl.baofeng.com
+
 202.108.14.212
+
 treexml.baofeng.net
+
 igw2.sdo.com
+
 9158.com
+
 info.client.xunlei.com
+
 xl7.xunlei.com
+
 tfile.gw.com.cn
+
 index.10jqka.com.cn
+
 treexml.baofeng.net
+
 igw2.sdo.com
 
